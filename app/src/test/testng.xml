@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="User Manual Test Suite">
+  <test name="All tests">
+    <parameter name="irctc_first_letters" value="kol" />
+    <classes>
+      <class name="user_manual.AppTest" />
+    </classes>
+  </test>
+</suite>
