@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">2</div>
+<div class="counter">4</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">32.141s</div>
+<div class="counter">58.575s</div>
 <p>duration</p>
 </div>
 </td>
@@ -51,7 +51,7 @@
 </td>
 <td>
 <div class="infoBox failures" id="successRate">
-<div class="percent">50%</div>
+<div class="percent">75%</div>
 <p>successful</p>
 </div>
 </td>
@@ -66,22 +66,25 @@
 <li>
 <a href="#tab1">Tests</a>
 </li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <div class="test">
-<a name="linkedin_post"></a>
-<h3 class="failures">linkedin_post</h3>
+<a name="linkedin_post[0](dummy.acc.4.321.3009@gmail.com, Dummy3009@, Hello Automation World!)"></a>
+<h3 class="failures">linkedin_post[0](dummy.acc.4.321.3009@gmail.com, Dummy3009@, Hello Automation World!)</h3>
 <span class="code">
-<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name='session_key']&quot;}
-  (Session info: chrome=110.0.5481.178)
+<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class='full-width mt4 artdeco-button artdeco-button--muted artdeco-button--2 artdeco-button--secondary ember-view']&quot;}
+  (Session info: chrome=110.0.5481.180)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c98c408151455a0589080a393922d4e2, findElement {using=xpath, value=//input[@name='session_key']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Atri\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:37492}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:37492/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c98c408151455a0589080a393922d4e2
+Command: [c51057506f271dec8c28dc9b0d36cbeb, findElement {using=xpath, value=//button[@class='full-width mt4 artdeco-button artdeco-button--muted artdeco-button--2 artdeco-button--secondary ember-view']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Atri\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51800}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51800/devtoo..., se:cdpVersion: 110.0.5481.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c51057506f271dec8c28dc9b0d36cbeb
 	at java.base@19.0.1/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base@19.0.1/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base@19.0.1/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -96,7 +99,7 @@ Session ID: c98c408151455a0589080a393922d4e2
 	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
 	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-	at app//user_manual.AppTest.linkedin_post(AppTest.java:70)
+	at app//user_manual.AppTest.linkedin_post(AppTest.java:84)
 	at java.base@19.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base@19.0.1/java.lang.reflect.Method.invoke(Method.java:578)
 	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
@@ -154,16 +157,38 @@ Session ID: c98c408151455a0589080a393922d4e2
 </tr>
 </thead>
 <tr>
-<td class="success">linkedin_media</td>
-<td class="success">19.929s</td>
+<td class="success">google_amazon</td>
+<td class="success">6.121s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">linkedin_post</td>
-<td class="failures">12.212s</td>
+<td class="success">irctc_from_station[0](kol)</td>
+<td class="success">6.830s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">linkedin_media[0](dummy.acc.321.3009@gmail.com, Dummy3009@, C:\\Users\\Atri\\Desktop\\Crio_Dark.png)</td>
+<td class="success">22.761s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">linkedin_post[0](dummy.acc.4.321.3009@gmail.com, Dummy3009@, Hello Automation World!)</td>
+<td class="failures">22.863s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>FOUND AMAZON LINK: PASS
+GOING TO IRCTC SITE
+FINDING THE INPUT ELEMENT
+SENDING KEYS
+CLICKING ON FIRST ELEMENT
+SUCCESS!
+</pre>
+</span>
 </div>
 </div>
 <div id="footer">
@@ -173,7 +198,7 @@ Session ID: c98c408151455a0589080a393922d4e2
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6</a> at Mar 12, 2023, 12:06:15 AM</p>
+<a href="http://www.gradle.org">Gradle 7.6</a> at Mar 13, 2023, 2:54:35 PM</p>
 </div>
 </div>
 </body>

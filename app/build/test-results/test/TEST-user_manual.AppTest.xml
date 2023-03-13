@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="user_manual.AppTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2023-03-11T18:35:41" hostname="DESKTOP-O7TB4C8" time="32.145">
+<testsuite name="user_manual.AppTest" tests="4" skipped="0" failures="1" errors="0" timestamp="2023-03-13T09:23:36" hostname="DESKTOP-O7TB4C8" time="58.582">
   <properties/>
-  <testcase name="linkedin_media" classname="user_manual.AppTest" time="19.929"/>
-  <testcase name="linkedin_post" classname="user_manual.AppTest" time="12.212">
-    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name='session_key']&quot;}&#10;  (Session info: chrome=110.0.5481.178)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.7.2', revision: '4d4020c3b7'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [c98c408151455a0589080a393922d4e2, findElement {using=xpath, value=//input[@name='session_key']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Atri\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:37492}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:37492/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c98c408151455a0589080a393922d4e2" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name='session_key']&quot;}
-  (Session info: chrome=110.0.5481.178)
+  <testcase name="google_amazon" classname="user_manual.AppTest" time="6.121"/>
+  <testcase name="irctc_from_station[0](kol)" classname="user_manual.AppTest" time="6.83"/>
+  <testcase name="linkedin_media[0](dummy.acc.321.3009@gmail.com, Dummy3009@, C:\\Users\\Atri\\Desktop\\Crio_Dark.png)" classname="user_manual.AppTest" time="22.761"/>
+  <testcase name="linkedin_post[0](dummy.acc.4.321.3009@gmail.com, Dummy3009@, Hello Automation World!)" classname="user_manual.AppTest" time="22.863">
+    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class='full-width mt4 artdeco-button artdeco-button--muted artdeco-button--2 artdeco-button--secondary ember-view']&quot;}&#10;  (Session info: chrome=110.0.5481.180)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.7.2', revision: '4d4020c3b7'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [c51057506f271dec8c28dc9b0d36cbeb, findElement {using=xpath, value=//button[@class='full-width mt4 artdeco-button artdeco-button--muted artdeco-button--2 artdeco-button--secondary ember-view']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Atri\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51800}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51800/devtoo..., se:cdpVersion: 110.0.5481.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c51057506f271dec8c28dc9b0d36cbeb" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class='full-width mt4 artdeco-button artdeco-button--muted artdeco-button--2 artdeco-button--secondary ember-view']&quot;}
+  (Session info: chrome=110.0.5481.180)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c98c408151455a0589080a393922d4e2, findElement {using=xpath, value=//input[@name='session_key']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Atri\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:37492}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:37492/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c98c408151455a0589080a393922d4e2
+Command: [c51057506f271dec8c28dc9b0d36cbeb, findElement {using=xpath, value=//button[@class='full-width mt4 artdeco-button artdeco-button--muted artdeco-button--2 artdeco-button--secondary ember-view']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Atri\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51800}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51800/devtoo..., se:cdpVersion: 110.0.5481.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c51057506f271dec8c28dc9b0d36cbeb
 	at java.base@19.0.1/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base@19.0.1/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base@19.0.1/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -26,7 +28,7 @@ Session ID: c98c408151455a0589080a393922d4e2
 	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
 	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-	at app//user_manual.AppTest.linkedin_post(AppTest.java:70)
+	at app//user_manual.AppTest.linkedin_post(AppTest.java:84)
 	at java.base@19.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base@19.0.1/java.lang.reflect.Method.invoke(Method.java:578)
 	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
@@ -71,6 +73,12 @@ Session ID: c98c408151455a0589080a393922d4e2
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <system-out><![CDATA[]]></system-out>
+  <system-out><![CDATA[FOUND AMAZON LINK: PASS
+GOING TO IRCTC SITE
+FINDING THE INPUT ELEMENT
+SENDING KEYS
+CLICKING ON FIRST ELEMENT
+SUCCESS!
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
