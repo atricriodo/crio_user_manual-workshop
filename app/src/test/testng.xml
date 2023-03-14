@@ -8,7 +8,11 @@
     <parameter name="media_path" value="" />
     <parameter name="name" value="" />
     <classes>
-      <class name="user_manual.AppTest" />
+      <class name="user_manual.Google" />
+      <class name="user_manual.Imdb" />
+      <class name="user_manual.Irctc" />
+      <class name="user_manual.LinkedIn" />
+      <class name="user_manual.WthreeSchools" />
     </classes>
   </test>
 </suite>
