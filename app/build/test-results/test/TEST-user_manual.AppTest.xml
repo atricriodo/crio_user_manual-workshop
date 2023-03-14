@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="user_manual.AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-13T11:42:55" hostname="DESKTOP-O7TB4C8" time="11.791">
+<testsuite name="user_manual.AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-14T10:30:02" hostname="DESKTOP-O7TB4C8" time="10.208">
   <properties/>
-  <testcase name="stocks" classname="user_manual.AppTest" time="11.791"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="w_three_schools_alerts[0](Atri Biswas)" classname="user_manual.AppTest" time="10.208"/>
+  <system-out><![CDATA[Hello Atri Biswas! How are you today?
+PASSED
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

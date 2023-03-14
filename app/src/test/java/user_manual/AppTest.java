@@ -4,6 +4,10 @@
 package user_manual;
 
 import org.testng.annotations.*;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
+
 import static org.testng.Assert.*;
 
 import java.time.Duration;
@@ -18,7 +22,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WebDriver.Options;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
@@ -29,7 +35,10 @@ public class AppTest {
 
     @BeforeSuite
     public void initialize_driver() {
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
@@ -141,30 +150,42 @@ public class AppTest {
         System.out.println("total number of Frames" + Utility.countFrames(driver));
     }
 
-    @Test(enabled = false)
-    public void w_three_schools() throws InterruptedException {
+    @Test(enabled = true)
+    @Parameters("name")
+    public void w_three_schools_alerts(String name) throws InterruptedException {
 
-        driver.get("https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_alert");
+        driver.get("https://www.w3schools.com/js/tryit.asp?filename=tryjs_prompt");
         driver.switchTo().frame("iframeResult");
         driver.findElement(By.xpath("//button[text()='Try it']")).click();
-        Alert alert = driver.switchTo().alert();
-        Thread.sleep(1000);
-        alert.accept();
-        Thread.sleep(1000);
+        driver.switchTo().alert().sendKeys(name);;
+        driver.switchTo().alert().accept();
+        try{
+            System.out.println(driver.findElement(By.xpath("//p[@id='demo']")).getText());
+            System.out.println(driver.findElement(By.xpath("//p[@id='demo']")).getText().contains(name)?"PASSED":"Failed");
+        }
+        catch(Exception e){
+            System.out.println("FAILED"+e);
+        }
 
+    }
+
+    @Test(enabled = false)
+    public void w_three_schools_widnows(){
+        
         driver.get("https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_open");
         String originalWindowHandle = driver.getWindowHandle();
         driver.switchTo().frame("iframeResult");
         driver.findElement(By.xpath("//button[text()='Try it']")).click();
-        Thread.sleep(1000);
 
         for (String windowHandle : driver.getWindowHandles()) {
             if (!originalWindowHandle.equals(windowHandle)) {
                 driver.switchTo().window(windowHandle);
-                break;
+                System.out.println(driver.getCurrentUrl());
+                Utility.takeScreenshot(driver);
+                driver.close();
             }
         }
-        Thread.sleep(1000);
+        driver.switchTo().window(originalWindowHandle);
     }
 
     @Test(enabled = false)

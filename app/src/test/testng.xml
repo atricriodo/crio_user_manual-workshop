@@ -7,6 +7,7 @@
     <parameter name="pwd" value="Dummy3009@" />
     <parameter name="content" value="Hello Automation World!" />
     <parameter name="media_path" value="C:\\Users\\Atri\\Desktop\\Crio_Dark.png" />
+    <parameter name="name" value="Atri Biswas" />
     <classes>
       <class name="user_manual.AppTest" />
     </classes>
