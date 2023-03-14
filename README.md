@@ -1,4 +1,5 @@
 ﻿# Crio Workshop on Automation
+![Crio Logo](https://www.crio.do/static/5ac1a39f9eebf6fe904e14069500353e/fd8b5/Crio_Dark.png)
 
 This workshop includes the following topics:
 1. **IRCTC Automation**
