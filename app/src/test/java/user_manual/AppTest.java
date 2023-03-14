@@ -66,7 +66,7 @@ public class AppTest {
     }
 
     @Test(enabled = false)
-    @Parameters({ "email1", "pwd", "media_path" })
+    @Parameters({ "email", "pwd", "media_path" })
     public void linkedin_media(String email1, String pwd, String media_path) throws InterruptedException {
         driver.get("https://www.linkedin.com/home");
         driver.findElement(By.xpath("//input[@name='session_key']")).sendKeys(email1);
@@ -102,7 +102,7 @@ public class AppTest {
     }
 
     @Test(enabled = false)
-    @Parameters({ "email2", "pwd", "content" })
+    @Parameters({ "email", "pwd", "content" })
     public void linkedin_post(String email2, String pwd, String content) throws InterruptedException {
         driver.get("https://www.linkedin.com/home");
         driver.findElement(By.xpath("//input[@name='session_key']")).sendKeys(email2);

@@ -2,8 +2,7 @@
 <suite name="User Manual Test Suite">
   <test name="All tests">
     <parameter name="irctc_first_letters" value="" />
-    <parameter name="email1" value="" />
-    <parameter name="email2" value="" />
+    <parameter name="email" value="" />
     <parameter name="pwd" value="" />
     <parameter name="content" value="" />
     <parameter name="media_path" value="" />
