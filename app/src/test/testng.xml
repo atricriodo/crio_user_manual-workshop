@@ -1,13 +1,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="User Manual Test Suite">
   <test name="All tests">
-    <parameter name="irctc_first_letters" value="kol" />
-    <parameter name="email1" value="dummy.acc.321.3009@gmail.com" />
-    <parameter name="email2" value="dummy.acc.4.321.3009@gmail.com" />
-    <parameter name="pwd" value="Dummy3009@" />
-    <parameter name="content" value="Hello Automation World!" />
-    <parameter name="media_path" value="C:\\Users\\Atri\\Desktop\\Crio_Dark.png" />
-    <parameter name="name" value="Atri Biswas" />
+    <parameter name="irctc_first_letters" value="" />
+    <parameter name="email1" value="" />
+    <parameter name="email2" value="" />
+    <parameter name="pwd" value="" />
+    <parameter name="content" value="" />
+    <parameter name="media_path" value="" />
+    <parameter name="name" value="" />
     <classes>
       <class name="user_manual.AppTest" />
     </classes>
