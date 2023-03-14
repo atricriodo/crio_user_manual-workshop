@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 
 public class Google  extends BaseTest{
-    @Test(enabled = false)
+    @Test(enabled = true, groups = "Google", description = "going to google and searching for 'amazon'!")
     public void google_amazon() throws InterruptedException {
         driver.get("https://www.google.com");
         Thread.sleep(2000);

@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 public class Imdb extends BaseTest {
-    @Test(enabled = false)
+    @Test(enabled = true, groups = "IMDB")
     public void imdb() throws InterruptedException {
         driver.get("https://www.imdb.com/chart/top");
         System.out.println(

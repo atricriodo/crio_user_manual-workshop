@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="user_manual.LinkedIn" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-03-14T12:37:37" hostname="DESKTOP-O7TB4C8" time="19.075">
+  <properties/>
+  <testcase name="linkedin_media[0](C:\Users\Atri\Desktop\Crio_Dark.png)" classname="user_manual.LinkedIn" time="9.827"/>
+  <testcase name="linkedin_post[0](Hello there!)" classname="user_manual.LinkedIn" time="9.244"/>
+  <system-out><![CDATA[No need for extra steps to log out!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

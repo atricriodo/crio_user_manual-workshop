@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="user_manual.WthreeSchools" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-14T11:57:23" hostname="DESKTOP-O7TB4C8" time="11.159">
+<testsuite name="user_manual.WthreeSchools" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-14T12:38:08" hostname="DESKTOP-O7TB4C8" time="1.323">
   <properties/>
-  <testcase name="w_three_schools_alerts[0](Atri)" classname="user_manual.WthreeSchools" time="11.159"/>
+  <testcase name="w_three_schools_alerts[0](Atri)" classname="user_manual.WthreeSchools" time="1.323"/>
   <system-out><![CDATA[Hello Atri! How are you today?
 PASSED
 ]]></system-out>

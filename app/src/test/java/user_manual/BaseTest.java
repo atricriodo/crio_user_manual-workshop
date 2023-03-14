@@ -7,6 +7,8 @@ import org.testng.annotations.*;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import java.time.Duration;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -14,7 +16,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class BaseTest {
     public static WebDriver driver = null;
 
-    @BeforeSuite
+    @BeforeSuite(alwaysRun = true)
     public void initialize_driver() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
@@ -24,9 +26,35 @@ public class BaseTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-    @AfterSuite
+    @AfterSuite(alwaysRun = true)
     public void close_and_quit_driver() {
         driver.close();
         driver.quit();
+    }
+    
+    @BeforeGroups(groups = "Linkedin")
+    @Parameters({"email", "pwd"})
+    public void log_in(String email, String pwd){
+        driver.get("https://www.linkedin.com/home");
+        driver.findElement(By.xpath("//input[@name='session_key']")).sendKeys(email);
+        driver.findElement(By.xpath("//input[@name='session_password']")).sendKeys(pwd);
+        driver.findElement(By.xpath("//button[@type='submit']")).click();
+    }
+    @AfterGroups(groups = "Linkedin")
+    public void log_out() throws InterruptedException{
+        driver.findElement(By.xpath(
+                "//button[@class='global-nav__primary-link global-nav__primary-link-me-menu-trigger artdeco-dropdown__trigger artdeco-dropdown__trigger--placement-bottom ember-view']"))
+                .click();
+        driver.findElement(By.xpath("//*[text()='Sign Out']")).click();
+        Thread.sleep(500);
+        try {
+            driver.findElement(By.xpath(
+                    "//button[@class='full-width mt4 artdeco-button artdeco-button--muted artdeco-button--2 artdeco-button--secondary ember-view']"))
+                    .click();
+            Thread.sleep(5000);
+        } catch (Exception e) {
+            System.out.println("No need for extra steps to log out!");
+        }
+
     }
 }

@@ -4,7 +4,7 @@ import org.testng.annotations.*;
 import org.openqa.selenium.By;
 
 public class WthreeSchools extends BaseTest{
-    @Test(enabled = true)
+    @Test(enabled = true, groups = "W3Schools", description = "going to w3schools to practice alerts!")
     @Parameters("name")
     public void w_three_schools_alerts(String name) throws InterruptedException {
 
@@ -23,7 +23,7 @@ public class WthreeSchools extends BaseTest{
 
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true, groups = "W3Schools", description = "going to w3schools to practice windows and screenshots!")
     public void w_three_schools_widnows(){
         
         driver.get("https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_open");
